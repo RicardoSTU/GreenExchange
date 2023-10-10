@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Green Exchange</title>
+ <meta charset="utf-8">
+ <style>
+  body {
+   background-color: lightgreen;
+  }
+  h1 {
+   text-align: center;
+   font-size: 36px;
+   color: white;
+   margin-top: 50px;
+  }
+  form {
+   width: 50%;
+   margin: auto;
+   background-color: white;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 10px grey;
+  }
+  label {
+   display: block;
+   margin-bottom: 10px;
+   font-size: 18px;
+   color: grey;
+  }
+  input[type="text"], input[type="email"], input[type="password"], select, input[type="file"] {
+   width: 100%;
+   padding: 10px;
+   font-size: 18px;
+   border-radius: 5px;
+   border: none;
+   margin-bottom: 20px;
+  }
+  input[type="submit"] {
+   background-color: green;
+   color: white;
+   font-size: 24px;
+   padding: 10px 20px;
+   border-radius: 5px;
+   border: none;
+   cursor: pointer;
+  }
+  input[type="submit"]:hover {
+   background-color: darkgreen;
+  }
+ </style>
+</head>
+<body>
+ <h1>Green Exchange / Жашыл Алмашуу</h1>
+ <form action="#" method="post" enctype="multipart/form-data">
+  <label for="item">Нерсе:</label>
+  <input type="text" id="item" name="item" placeholder="Алмашуу керек нерсени киргизиниз" required>
+
+  <label for="category">Категория:</label>
+  <select id="category" name="category" required>
+   <option value="">Категория танда?ыз</option>
+   <option value="hat">Шляпа</option>
+   <option value="shirt">Кофта</option>
+   <option value="pants">Шым</option>
+   <option value="shoes">Аяк кийим</option>
+   <option value="accessories">Аксессуарлар</option>
+  </select>
+
+  <label for="size">?лч?м:</label>
+  <input type="text" id="size" name="size" placeholder="?лч?мд? киргизиниз" required>
+
+  <label for="condition">Кондиция:</label>
+  <select id="condition" name="condition" required>
+   <option value="">Кондиция танда?ыз</option>
+   <option value="new">Жа?ы</option>
+   <option value="like-new">Жа?ыгына т?м?н</option>
+   <option value="good">Жакшы</option>
+   <option value="fair">Аз жакшы</option>
+   <option value="poor">Керек</option>
+  </select>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Email киргизиниз" required>
+
+  <label for="password">Пароль:</label>
+  <input type="password" id="password" name="password" placeholder="Пароль киргизиниз" required>
+
+  <label for="photo">Фото:</label>
+  <input type="file" id="photo" name="photo" accept="image/*" required>
+
+  <input type="submit" value="Жібер??">
+ </form>
+</body>
+</html>
