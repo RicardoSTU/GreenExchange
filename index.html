@@ -5,7 +5,8 @@
  <meta charset="utf-8">
  <style>
   body {
-   background-color: lightgreen;
+   background-image: url('https://images.unsplash.com/photo-1542281286-9e0a16bb7366');
+   background-size: cover;
   }
   h1 {
    text-align: center;
@@ -51,7 +52,7 @@
 </head>
 <body>
  <h1>Green Exchange / Жашыл Алмашуу</h1>
- <form action="#" method="post">
+ <form action="#" method="post" enctype="multipart/form-data">
   <label for="item">Нерсе:</label>
   <input type="text" id="item" name="item" placeholder="Алмашуу нерсени киргизиниз" required>
 
@@ -68,9 +69,9 @@
   <label for="size">Өлчөм:</label>
   <input type="text" id="size" name="size" placeholder="Өлчөмдү киргизиниз" required>
 
-  <label for="condition">Кондиция:</label>
+  <label for="condition">Товардын абалы:</label>
   <select id="condition" name="condition" required>
-   <option value="">Кондиция тандаңыз</option>
+   <option value="">Товардын абалы</option>
    <option value="new">Жаңы</option>
    <option value="like-new">Эң жакшы</option>
    <option value="good">Жакшы</option>
@@ -84,8 +85,11 @@
   <label for="password">Пароль:</label>
   <input type="password" id="password" name="password" placeholder="Пароль киргизиниз" required>
 
+  <label for="photo">Фото:</label>
+  <input type="file" id="photo" name="photo" accept="image/*" required>
+
   <input type="submit" value="Жиберүү">
  </form>
-<img src="https://cdn. pixabay.com/photo /2017/02/15/11/38/gift-2062425_960_720 .png" alt="Exchange photo"'>
+
 </body>
 </html>
